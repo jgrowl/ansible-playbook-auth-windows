@@ -1,0 +1,7 @@
+---
+
+- name: restart sssd
+  service: name=sssd state=restarted
+
+- name: restart idmapd
+  service: name=idmapd state=restarted

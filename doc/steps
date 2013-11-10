@@ -1,0 +1,4 @@
+sudo kadmin.local -q "addprinc -randkey cifs/neo.danbishop.org"
+sudo kadmin.local -q "addprinc -randkey cifs/neo"
+sudo kadmin.local -q "ktadd -k /etc/krb5.keytab -e rc4-hmac:normal cifs/neo.danbishop.org"
+sudo kadmin.local -q "ktadd -k /etc/krb5.keytab -e rc4-hmac:normal cifs/neo"

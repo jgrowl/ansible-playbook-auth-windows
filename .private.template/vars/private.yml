@@ -1,0 +1,20 @@
+auth_client_include_sssd: True
+
+# sssd
+sssd_domains: example.com 
+sssd_domain: example.com 
+sssd_ldap_uri: ldap://ldap.example.com # ie. ldap://ldap.example.com
+sssd_ldap_search_base: dc=example,dc=com # ie. dc=example,dc=com
+sssd_ldap_sudo_search_base: ou=sudoers,dc=example,dc=com # ie. ou=sudoers,dc=example,dc=com
+sssd_krb5_kdc_ip: kerberos.example.com # ie. kerberos.example.com
+sssd_krb5_realm: EXAMPLE.COM # ie. EXAMPLE.COM 
+
+# krb5.conf
+krb_krb5_conf: False
+auth_client_realm: EXAMPLE.com
+auth_client_kdc: kerberos.example.com
+auth_client_admin_server: kerberos.example.com
+auth_client_master_kdc: kerberos.example.com
+auth_client_default_domain: example.com
+auth_client_admin_group: 10000
+auth_client_idmapd_domain: example.com 

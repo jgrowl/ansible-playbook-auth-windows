@@ -1,0 +1,4 @@
+[submodule "roles/apt-update"]
+	path = roles/apt-update
+	url = git@github.com:jgrowl/ansible-playbook-apt-update.git
+	branch = master
